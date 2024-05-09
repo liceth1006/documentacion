@@ -1,0 +1,4 @@
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(35 39 47 / var(--tw-text-opacity));
+}

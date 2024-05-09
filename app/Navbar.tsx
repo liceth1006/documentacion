@@ -1,5 +1,8 @@
 import React from "react";
-import { useState } from 'react';
+import Link from "next/link"
+
+import Image from "next/image";
+import Logo from "../public/logo-tech.png";
 
 export default function Navbar() {
 
@@ -35,28 +38,19 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="f">
-          <div className="flex items-center justify-center h-full">
-            <a
+          <div className="flex items-center justify-center h-full pt-1">
+            <Link
               className="active:scale-95 overflow-hidden transition-transform relative items-center text-primary dark:text-primary-dark p-1 whitespace-nowrap outline-link rounded-full 3xl:rounded-xl inline-flex text-lg font-normal gap-2"
               href="/"
             >
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="-10.5 -9.45 21 18.9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-sm me-0 w-10 h-10 text-brand dark:text-brand-dark flex origin-center transition-all ease-in-out"
-              >
-                <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
-                <g stroke="currentColor" stroke-width="1" fill="none">
-                  <ellipse rx="10" ry="4.5"></ellipse>
-                  <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
-                  <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
-                </g>
-              </svg>
-              <span className="sr-only 3xl:not-sr-only">React</span>
-            </a>
+              <Image
+                src={Logo}
+                alt="Picture of the author"
+                width={200}
+                height={200}
+              />
+              <span className="sr-only 3xl:not-sr-only">Talent Tech</span>
+            </Link>
           </div>
         </div>
         <div className="flex flex-column justify-center items-center">
@@ -102,17 +96,17 @@ export default function Navbar() {
           <div className="flex flex-auto sm:flex-1">
             <a
               className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize hover:bg-primary/5 hover:dark:bg-primary-dark/5"
-              href="/learn"
+              href="/Overview"
             >
-              Learn
+             Aprender
             </a>
           </div>
           <div className="flex flex-auto sm:flex-1">
             <a
               className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize hover:bg-primary/5 hover:dark:bg-primary-dark/5"
-              href="/reference/react"
+              href="/Projects"
             >
-              Reference
+              proyectos
             </a>
           </div>
           <div className="flex flex-auto sm:flex-1">
@@ -120,15 +114,7 @@ export default function Navbar() {
               className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize bg-highlight dark:bg-highlight-dark text-link dark:text-link-dark"
               href="/community"
             >
-              Community
-            </a>
-          </div>
-          <div className="flex flex-auto sm:flex-1">
-            <a
-              className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize hover:bg-primary/5 hover:dark:bg-primary-dark/5"
-              href="/blog"
-            >
-              Blog
+              Api
             </a>
           </div>
         </div>
