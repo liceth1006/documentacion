@@ -25,6 +25,7 @@ export default function VerticalNavbar() {
               <ul>
                 <li className="pb-2 mb-3 ">
                   <Link
+                    onClick={toggleDropdown}
                     href="/Learn/Overview"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
                       pathname === "/Overview" ? "bg-sky-200" : ""
@@ -46,7 +47,7 @@ export default function VerticalNavbar() {
                   </li>
 
                 {isOpen && (
-                  <div className="w-full pt-6 scrolling-touch lg:h-auto grow pe-0   md:pt-4 lg:pt-4 ">
+                  <div className="w-full scrolling-touch lg:h-auto grow pe-0 ">
                     <ul>
                       <li className="pb-2 mb-3">
                         <Link
@@ -58,26 +59,6 @@ export default function VerticalNavbar() {
                           <div>Conceptos Clave de la POO</div>
                         </Link>
                       </li>
-                      <li className="pb-2 mb-3">
-                        <Link
-                          href="/FrontEndReact"
-                          className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                            pathname === "/FrontEndReact" ? "bg-sky-200" : ""
-                          }`}
-                        >
-                          <div>Implementación de POO</div>
-                        </Link>
-                      </li>
-                      <li className="pb-2 mb-3">
-                        <Link
-                          href="/FrontEndReact"
-                          className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                            pathname === "/FrontEndReact" ? "bg-sky-200" : ""
-                          }`}
-                        >
-                          <div>Implementación de POO</div>
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                 )}
@@ -85,6 +66,7 @@ export default function VerticalNavbar() {
 
                 <li className="pb-2 mb-3">
                   <Link
+                    onClick={toggleDropdown}
                     href="/DataStructure"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
                       pathname === "/DataStructure" ? "bg-sky-200" : ""

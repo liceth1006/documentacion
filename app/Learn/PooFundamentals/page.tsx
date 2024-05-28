@@ -9,14 +9,17 @@ export default function Page() {
 
   return (
     <div className="">
-<div className="grid lg:grid-cols-[auto,20rem]">
+      <div className="grid lg:grid-cols-[auto,20rem]">
         <main className="min-w-0 isolate pl-4 mt-10">
           <article className="font-normal break-words text-primary ">
             <div className="ps-0">
               <div className="px-5 sm:px-12 pt-3.5">
                 <div className="max-w-4xl ms-0 2xl:mx-auto">
                   <div className="flex flex-wrap"></div>
-                  <h1 id="poo-concepts" className="  mdx-heading text-primary dark:text-primary-dark -mx-.5 break-words text-3xl font-display font-bold leading-tight">
+                  <h1
+                    id="poo-concepts"
+                    className="  mdx-heading text-primary dark:text-primary-dark -mx-.5 break-words text-3xl font-display font-bold leading-tight"
+                  >
                     Conceptos Clave de la POO
                     <a
                       href="#undefined"
@@ -366,6 +369,98 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                     objetos y nos permite escribir código más flexible y
                     modular.
                   </p>
+
+                  <h2
+                    id="polymorphism"
+                    className="text-3xl leading-10 font-bold pt-16 mb-5"
+                  >
+                    Abstracción
+                  </h2>
+                  <p>
+                    La abstracción es un concepto fundamental en la programación
+                    orientada a objetos que consiste en representar las
+                    características esenciales de un objeto sin mostrar los
+                    detalles complejos de su implementación. Esto permite
+                    enfocarse en lo importante para un contexto particular y
+                    ocultar la complejidad innecesaria.
+                  </p>
+                  <h3
+                    id="example-polymorphism"
+                    className="text-2xl leading-10 font-bold pt-16 mb-5"
+                  >
+                    Ejemplo de Abstracción
+                  </h3>
+
+                  <div className="bg-gray-300 text-dark p-6 rounded-lg  font-mono">
+                    <div className="flex justify-between items-center">
+                      <div className="flex space-x-2 text-red-500">
+                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                    <pre className="whitespace-pre-wrap my-4">
+{`// Clase base
+class Animal {
+  constructor(nombre, tipo) {
+    this.nombre = nombre;
+    this.tipo = tipo;
+  }
+
+  saludar() {
+    return \`¡Hola! Soy \${this.nombre} y soy un \${this.tipo}.\`;
+  }
+
+  moverse() {
+    return \`\${this.nombre} está moviéndose.\`;
+  }
+}
+
+// Subclase que sobrescribe el método moverse()
+class Perro extends Animal {
+  constructor(nombre, tipo, raza) {
+    super(nombre, tipo);
+    this.raza = raza;
+  }
+
+  moverse() {
+    return \`\${this.nombre} está corriendo.\`;
+  }
+}
+
+let firulais = new Perro("Firulais", "perro", "Labrador");
+
+console.log(firulais.saludar()); // Output: ¡Hola! Soy Firulais y soy un perro.
+console.log(firulais.moverse()); // Output: Firulais está corriendo.
+`}
+</pre>
+
+                    </div>
+                  </div>
+                  <p className="mt-5">
+                    En este ejemplo, la clase base Animal define un método
+                    genérico llamado moverse() que proporciona un mensaje sobre
+                    cómo se mueve el animal. La subclase Perro hereda este
+                    método de la clase base, pero lo sobrescribe para reflejar
+                    el comportamiento específico de los perros, en este caso,
+                    correr.
+                  </p>
+                  <p>
+                    Cuando creamos una instancia de la subclase Perro, llamada
+                    firulais, podemos ver cómo el método saludar() proporciona
+                    un saludo genérico, mientras que el método moverse()
+                    devuelve un mensaje específico de cómo se mueve un perro,
+                    demostrando así el polimorfismo.
+                  </p>
+                  <p>
+                    {" "}
+                    Esta capacidad de un método para comportarse de manera
+                    diferente según la clase del objeto que lo llama es una
+                    característica fundamental de la programación orientada a
+                    objetos y nos permite escribir código más flexible y
+                    modular.
+                  </p>
                 </div>
               </div>
             </div>
@@ -378,7 +473,6 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
             </h2>
             <div className="h-full overflow-y-auto ps-4 max-h-[calc(100vh-7.5rem)]">
               <ul className="space-y-2 pb-16">
-              
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#classes-objects"
@@ -386,7 +480,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#StructuredProgramming" ? "bg-sky-200" : ""
                     }`}
                   >
-                   Clases y Objetos
+                    Clases y Objetos
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -396,7 +490,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#StructuredProgramming" ? "bg-sky-200" : ""
                     }`}
                   >
-                   Ejemplo de clases y objetos
+                    Ejemplo de clases y objetos
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -406,7 +500,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#StructuredProgramming" ? "bg-sky-200" : ""
                     }`}
                   >
-                   Encapsulamiento
+                    Encapsulamiento
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -416,7 +510,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#StructuredProgramming" ? "bg-sky-200" : ""
                     }`}
                   >
-                  Ejemplo de encapsulamiento
+                    Ejemplo de encapsulamiento
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -426,7 +520,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#Poo" ? "bg-sky-200" : ""
                     }`}
                   >
-                     Herencia
+                    Herencia
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -436,7 +530,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       hash === "#Poo" ? "bg-sky-200" : ""
                     }`}
                   >
-                   Ejemplo de Herencia
+                    Ejemplo de Herencia
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -459,7 +553,6 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                     Ejemplo de Polimorfismo
                   </Link>
                 </li>
-
               </ul>
             </div>
           </nav>
