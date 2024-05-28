@@ -1,25 +1,24 @@
 "use client";
 import Image from "next/image";
-import Navbar from "../Navbar";
-import VerticalNavbar from "../VerticalNavbar";
+import Navbar from "../../Navbar";
+import VerticalNavbar from "../../VerticalNavbar";
 import Link from "next/link";
 
 export default function Page() {
-  const hash = window.location.hash;
+const hash = window.location.hash;
 
   return (
     <div className="">
-      <Navbar />
-      <div className="grid  lg:grid-cols-[20rem,auto,20rem] lg:grid-cols-sidebar-content 2xl:grid-cols-sidebar-content-toc">
-        <VerticalNavbar />
-        <main className="min-w-0 isolate pl-4 mt-10">
+     <div className="grid lg:grid-cols-[auto,20rem]">
+        <main className="min-w-0 isolate pl-4 mt-10 ">
           <article className="font-normal break-words text-primary ">
             <div className="ps-0">
               <div className="px-5 sm:px-12 pt-3.5">
                 <div className="max-w-4xl ms-0 2xl:mx-auto">
-                  <div className="flex flex-wrap"></div>
+                  <div className="flex flex-wrap">
+                  </div>
                   <h1 className=" mdx-heading text-primary dark:text-primary-dark -mx-.5 break-words text-3xl font-display font-bold leading-tight">
-                    Introducción a la programación orientada a objetos
+                  Documentación del Bootcamp de Desarrollo Web
                     <a
                       href="#undefined"
                       aria-label="Link for this heading"
@@ -51,121 +50,103 @@ export default function Page() {
                     Introducción
                   </h2>
                   <p>
-                    En esta documentación, exploraremos los fundamentos de la
-                    Programación Orientada a Objetos (POO), un paradigma de
-                    programación que ha revolucionado la forma en que concebimos
-                    y desarrollamos software. Comenzaremos con una breve
-                    revisión de los conceptos de programación estructurada y
-                    luego nos sumergiremos en el mundo de los objetos, clases,
-                    herencia y encapsulamiento que define la POO.
+                    Durante mi participación en el Bootcamp de Desarrollo Web
+                    Avanzado, he tenido el privilegio de sumergirme en un viaje
+                    de aprendizaje enriquecedor y transformador. Este bootcamp
+                    ha sido una experiencia invaluable que ha ampliado mis
+                    conocimientos y habilidades en el campo del desarrollo web.
+                    En esta documentación, comparto con entusiasmo todo lo que
+                    he aprendido a lo largo del programa. Desde los fundamentos
+                    de la programación orientada a objetos hasta la creación de
+                    aplicaciones web interactivas con React, esta documentación
+                    representa un recorrido completo por los temas cubiertos
+                    durante el bootcamp.
                   </p>
+                  
 
                   <h2
                     id="Objective"
                     className="text-3xl leading-10 font-bold pt-16 mb-5"
                   >
-                    De programación estructurada a POO
+                    Objetivo
                   </h2>
                   <p>
-                    Cuando comencé mi viaje en la programación, estaba
-                    familiarizado principalmente con la programación
-                    estructurada. Es decir, escribía código que se basaba en la
-                    ejecución secuencial de instrucciones, utilizando
-                    estructuras de control como bucles y condicionales para
-                    manipular datos. Y aunque la programación estructurada es
-                    poderosa y útil, pronto descubrí que había un enfoque aún
-                    más poderoso y flexible: la programación orientada a
-                    objetos.
+                    Mi objetivo al crear esta documentación es proporcionar una
+                    referencia útil tanto para mí como para otros estudiantes
+                    interesados en el desarrollo web. A través de esta
+                    recopilación de conocimientos, espero no solo consolidar lo
+                    aprendido, sino también inspirar y apoyar a otros en su
+                    viaje hacia el dominio del desarrollo web.
                   </p>
-                  <p className="mt-5">
-                    Antes de la llegada de la programación orientada a objetos
-                    (POO), predominaba un enfoque de programación estructurada.
-                    En este paradigma, el código se organiza principalmente en
-                    funciones o procedimientos que operan sobre datos. La
-                    programación estructurada se basa en varios conceptos clave
-                    que sientan las bases para el desarrollo de software:
+
+                  <h2
+                    id="Topics"
+                    className="text-3xl leading-10 font-bold pt-16 mb-5"
+                  >
+                    Temas
+                  </h2>
+                  <p className="whitespace-pre-wrap my-4">
+                    Durante el Bootcamp de Desarrollo Web, se exploraron una
+                    variedad de temas cruciales para el desarrollo web moderno.
+                    Entre estos temas se incluyen:
                   </p>
                   <ul className="ms-6 my-3 list-disc">
                     <li className="leading-relaxed mb-1 mt-1">
                       <a className="inline font-semibold " href="">
                         {" "}
-                        Procedimientos y Funciones:
+                        Programación Orientada a Objetos
                       </a>
                     </li>
                     <p>
-                      Los programas están divididos en bloques de código
-                      independientes, llamados procedimientos o funciones, que
-                      realizan tareas específicas.
+                      En este módulo, exploraremos los fundamentos de la
+                      Programación Orientada a Objetos (POO), incluyendo
+                      conceptos como encapsulamiento, herencia y polimorfismo.
+                      Aprenderás a diseñar y desarrollar software de manera más
+                      eficiente y modular.
                     </p>
                     <li className="leading-relaxed mb-1 mt-1">
                       {" "}
                       <a className="inline font-semibold " href="">
-                        Datos y Estructuras de Datos:
+                        Estructura de Datos y Algoritmos
                       </a>
                     </li>
                     <p>
-                      Los datos son elementos fundamentales en la programación
-                      estructurada y se organizan en estructuras de datos como
-                      arreglos, listas o registros.
+                      Este módulo se enfoca en el estudio de diversas
+                      estructuras de datos, como listas, pilas, colas, árboles y
+                      grafos, así como en el análisis y diseño de algoritmos
+                      para resolver problemas complejos de manera óptima.
                     </p>
                     <li className="leading-relaxed mb-1 mt-1">
                       <a className="inline font-semibold " href="">
-                        Control de Flujo:
+                        Frontend con React
                       </a>
                     </li>
                     <p>
-                      Se utilizan estructuras de control como bucles (for,
-                      while) y condicionales (if, else) para dirigir el flujo de
-                      ejecución del programa.
+                      Exploraremos el framework React, ampliamente utilizado en
+                      el desarrollo de interfaces de usuario modernas y
+                      dinámicas. Desde los conceptos básicos hasta las técnicas
+                      avanzadas, aprenderás a construir aplicaciones web
+                      interactivas y escalables.
                     </p>
                     <li className="leading-relaxed mb-1 mt-1 ">
                       <a className="inline font-semibold " href="">
-                        Modularidad:
+                        Estilización con Frameworks
                       </a>
                     </li>
                     <p>
-                      El principio de modularidad promueve la división del
-                      código en módulos más pequeños y manejables, lo que
-                      facilita la comprensión y mantenimiento del programa.
+                      En este módulo, aprenderás a utilizar frameworks de
+                      estilización como Bootstrap y Material-UI para mejorar la
+                      apariencia y la experiencia de usuario de tus aplicaciones
+                      web, creando interfaces estéticamente atractivas y
+                      responsivas.
                     </p>
                   </ul>
-                  <p>
-                    Aunque la programación estructurada proporciona un marco
-                    sólido para el desarrollo de software, tiene sus
-                    limitaciones. A medida que los programas crecen en tamaño y
-                    complejidad, puede volverse difícil de mantener y extender
-                    debido a la falta de encapsulamiento y reutilización de
-                    código.
-                  </p>
-                  <p className="mt-3">
-                    Es en este contexto que surge la programación orientada a
-                    objetos como un enfoque alternativo y más poderoso. En la
-                    siguiente sección, exploraremos en detalle los principios y
-                    conceptos fundamentales de la POO y cómo supera las
-                    limitaciones de la programación estructurada.
-                  </p>
-                  <h2
-                    id="Topics"
-                    className="text-3xl leading-10 font-bold pt-16 mb-5"
-                  >
-                    ¿Qué es la Programación Orientada a Objetos (POO)?
-                  </h2>
-                  <p className="whitespace-pre-wrap my-4">
-                    En pocas palabras, la POO es un paradigma de programación
-                    que se centra en el concepto de "objetos". Ahora, no me
-                    refiero a objetos físicos como una silla o una mesa, sino a
-                    entidades virtuales que tienen propiedades (también llamadas
-                    atributos) y comportamientos (también llamados métodos).
-                    Estos objetos interactúan entre sí, lo que permite construir
-                    programas complejos y modulares de una manera más intuitiva
-                    y estructurada.
-                  </p>
                 </div>
               </div>
             </div>
           </article>
         </main>
-        <div className="-mt-16 lg:max-w-custom-xs 2xl:block">
+        <div className="-mt-16 hidden lg:block lg:max-w-custom-xs 2xl:block">
           <nav className="pt-20 sticky top-0 end-0">
             <h2 className="mb-3 lg:mb-3 uppercase tracking-wide font-bold text-sm w-full">
               Rutas
@@ -188,6 +169,7 @@ export default function Page() {
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
                       hash === "#Objective" ? "bg-sky-200" : ""
                     }`}
+                  
                   >
                     Objetivo
                   </Link>
@@ -198,6 +180,7 @@ export default function Page() {
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
                       hash === "#Topics" ? "bg-sky-200" : ""
                     }`}
+                  
                   >
                     Temas
                   </Link>
@@ -207,6 +190,7 @@ export default function Page() {
           </nav>
         </div>
       </div>
-    </div>
+      </div>
+   
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "../Navbar";
-import VerticalNavbar from "../VerticalNavbar";
+import Navbar from "../../Navbar";
+import VerticalNavbar from "../../VerticalNavbar";
 
 export default function Page() {
   return (

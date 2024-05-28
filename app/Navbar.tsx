@@ -100,9 +100,9 @@ export default function Navbar() {
           <div className="mx-2.5 gap-1.5 hidden lg:flex">
             <div className="flex flex-auto sm:flex-1">
               <Link
-              href="/Overview"
+              href="/Learn"
                 className={`active:scale-95 overflow-hidden transition-transform relative items-center  p-1 whitespace-nowrap  rounded-full  inline-flex text-lg font-normal gap- hover:bg-gray-200 link ${
-                  pathname === "/Overview" ? "bg-sky-200" : ""
+                  pathname === "/Learn" ? "bg-sky-200" : ""
                 }`}
               >
                 Aprender
