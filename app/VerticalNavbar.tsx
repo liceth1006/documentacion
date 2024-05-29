@@ -28,7 +28,7 @@ export default function VerticalNavbar() {
                     onClick={toggleDropdown}
                     href="/Learn/Overview"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      pathname === "/Overview" ? "bg-sky-200" : ""
+                      pathname === "/Learn/Overview" ? "bg-sky-200" : ""
                     }`}
                   >
                     <div>Descripción general</div>
@@ -39,7 +39,7 @@ export default function VerticalNavbar() {
                     href="/Learn/Poo"
                     onClick={toggleDropdown}
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      pathname === "/Poo" ? "bg-sky-200" : ""
+                      pathname === "/Learn/Poo" ? "bg-sky-200" : ""
                     }`}
                   >
                     Introducción a la POO
@@ -53,10 +53,20 @@ export default function VerticalNavbar() {
                         <Link
                           href="/Learn/PooFundamentals"
                           className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                            pathname === "/PooFundamentals" ? "bg-sky-200" : ""
+                            pathname === "/Learn/PooFundamentals" ? "bg-sky-200" : ""
                           }`}
                         >
                           <div>Conceptos Clave de la POO</div>
+                        </Link>
+                      </li>
+                      <li className="pb-2 mb-3">
+                        <Link
+                          href="/Learn/DesignPatternsPoo"
+                          className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
+                            pathname === "/Learn/DesignPatternsPoo" ? "bg-sky-200" : ""
+                          }`}
+                        >
+                          <div>Patrones de diseño en POO</div>
                         </Link>
                       </li>
                     </ul>
@@ -67,17 +77,17 @@ export default function VerticalNavbar() {
                 <li className="pb-2 mb-3">
                   <Link
                     onClick={toggleDropdown}
-                    href="/DataStructure"
+                    href="/Learn/SOLIDPrinciples"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      pathname === "/DataStructure" ? "bg-sky-200" : ""
+                      pathname === "/Learn/SOLIDPrinciples" ? "bg-sky-200" : ""
                     }`}
                   >
-                    <div>Estructura de datos y algoritmos</div>
+                    <div>Principios SOLID</div>
                   </Link>
                 </li>
                 <li className="pb-2 mb-3">
                   <Link
-                    href="/FrontEndReact"
+                    href="/SOLIDPrinciples"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
                       pathname === "/FrontEndReact" ? "bg-sky-200" : ""
                     }`}

@@ -371,7 +371,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                   </p>
 
                   <h2
-                    id="polymorphism"
+                    id="Abstraction"
                     className="text-3xl leading-10 font-bold pt-16 mb-5"
                   >
                     Abstracción
@@ -385,7 +385,7 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                     ocultar la complejidad innecesaria.
                   </p>
                   <h3
-                    id="example-polymorphism"
+                    id="example-Abstraction"
                     className="text-2xl leading-10 font-bold pt-16 mb-5"
                   >
                     Ejemplo de Abstracción
@@ -400,8 +400,8 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                       </div>
                     </div>
                     <div className="mt-4">
-                    <pre className="whitespace-pre-wrap my-4">
-{`// Clase base
+                      <pre className="whitespace-pre-wrap my-4">
+                        {`// Clase base
 class Animal {
   constructor(nombre, tipo) {
     this.nombre = nombre;
@@ -415,6 +415,11 @@ class Animal {
   moverse() {
     return \`\${this.nombre} está moviéndose.\`;
   }
+
+  // Método de abstracción
+  obtenerInformacion() {
+    return \`Nombre: \${this.nombre}, Tipo: \${this.tipo}\`;
+  }
 }
 
 // Subclase que sobrescribe el método moverse()
@@ -427,39 +432,29 @@ class Perro extends Animal {
   moverse() {
     return \`\${this.nombre} está corriendo.\`;
   }
+
+  // Método de abstracción específico de Perro
+  obtenerInformacion() {
+    return \`Nombre: \${this.nombre}, Tipo: \${this.tipo}, Raza: \${this.raza}\`;
+  }
 }
 
 let firulais = new Perro("Firulais", "perro", "Labrador");
 
 console.log(firulais.saludar()); // Output: ¡Hola! Soy Firulais y soy un perro.
 console.log(firulais.moverse()); // Output: Firulais está corriendo.
+console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: perro, Raza: Labrador
 `}
-</pre>
-
+                      </pre>
                     </div>
                   </div>
                   <p className="mt-5">
-                    En este ejemplo, la clase base Animal define un método
-                    genérico llamado moverse() que proporciona un mensaje sobre
-                    cómo se mueve el animal. La subclase Perro hereda este
-                    método de la clase base, pero lo sobrescribe para reflejar
-                    el comportamiento específico de los perros, en este caso,
-                    correr.
-                  </p>
-                  <p>
-                    Cuando creamos una instancia de la subclase Perro, llamada
-                    firulais, podemos ver cómo el método saludar() proporciona
-                    un saludo genérico, mientras que el método moverse()
-                    devuelve un mensaje específico de cómo se mueve un perro,
-                    demostrando así el polimorfismo.
-                  </p>
-                  <p>
-                    {" "}
-                    Esta capacidad de un método para comportarse de manera
-                    diferente según la clase del objeto que lo llama es una
-                    característica fundamental de la programación orientada a
-                    objetos y nos permite escribir código más flexible y
-                    modular.
+                    En este ejemplo, hemos agregado un método de abstracción
+                    obtenerInformacion() tanto en la clase base Animal como en
+                    la subclase Perro. Este método proporciona una forma de
+                    obtener información básica sobre el animal y, en el caso de
+                    Perro, incluye información adicional específica de la
+                    subclase.
                   </p>
                 </div>
               </div>
@@ -551,6 +546,26 @@ console.log(firulais.moverse()); // Output: Firulais está corriendo.
                     }`}
                   >
                     Ejemplo de Polimorfismo
+                  </Link>
+                </li>
+                <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
+                  <Link
+                    href="#Abstraction"
+                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
+                      hash === "#Poo" ? "bg-sky-200" : ""
+                    }`}
+                  >
+                    Abstracción
+                  </Link>
+                </li>
+                <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
+                  <Link
+                    href="#example-Abstraction"
+                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
+                      hash === "#Poo" ? "bg-sky-200" : ""
+                    }`}
+                  >
+                    Ejemplo de Abstracción
                   </Link>
                 </li>
               </ul>
