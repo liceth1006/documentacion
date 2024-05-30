@@ -100,7 +100,7 @@ export default function Navbar() {
           <div className="mx-2.5 gap-1.5 hidden lg:flex">
             <div className="flex flex-auto sm:flex-1">
               <Link
-              href="/Learn"
+              href="/Learn/Overview"
                 className={`active:scale-95 overflow-hidden transition-transform relative items-center  p-1 whitespace-nowrap  rounded-full  inline-flex text-lg font-normal gap- hover:bg-gray-200 link ${
                   pathname === "/Learn" ? "bg-sky-200" : ""
                 }`}
@@ -109,21 +109,16 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="flex flex-auto sm:flex-1">
-              <a
-                className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize hover:bg-primary/5 hover:dark:bg-primary-dark/5"
-                href="/Projects"
+            <Link
+              href="/Projects"
+                className={`active:scale-95 overflow-hidden transition-transform relative items-center  p-1 whitespace-nowrap  rounded-full  inline-flex text-lg font-normal gap- hover:bg-gray-200 link ${
+                  pathname === "/Projects" ? "bg-sky-200" : ""
+                }`}
               >
                 proyectos
-              </a>
+              </Link>
             </div>
-            <div className="flex flex-auto sm:flex-1">
-              <a
-                className="active:scale-95 transition-transform w-full text-center outline-link py-1.5 px-1.5 xs:px-3 sm:px-4 rounded-full capitalize bg-highlight dark:bg-highlight-dark text-link dark:text-link-dark"
-                href="/community"
-              >
-                Api
-              </a>
-            </div>
+            
           </div>
           <div className="flex w-full md:hidden"></div>
           <div className="flex items-center -space-x-2.5 xs:space-x-0 ">
@@ -241,7 +236,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Open on GitHub"
-                href="https://github.com/facebook/react/releases"
+                href="https://github.com/liceth1006"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

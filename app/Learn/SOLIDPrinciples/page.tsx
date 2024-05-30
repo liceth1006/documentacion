@@ -265,7 +265,7 @@ export default function Page() {
                       hash === "#StructuredProgramming" ? "bg-sky-200" : ""
                     }`}
                   >
-                    De programación estructurada a POO
+                   ¿Qué son los Principios SOLID?
                   </Link>
                 </li>
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
@@ -275,7 +275,7 @@ export default function Page() {
                       hash === "#Poo" ? "bg-sky-200" : ""
                     }`}
                   >
-                    ¿Qué es la Programación Orientada a Objetos (POO)?
+                    ¿Por qué son importantes los Principios SOLID?
                   </Link>
                 </li>
               </ul>

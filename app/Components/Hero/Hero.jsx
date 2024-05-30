@@ -1,6 +1,7 @@
 import styles from "../Hero/Hero.module.css";
 import Image from "next/image";
 import Logo from "../../../public/logo-tech.png";
+import Link from "next/link";
 export default function Hero() {
   return (
     <main className="min-w-100 isolate">
@@ -13,12 +14,12 @@ export default function Hero() {
             </h1>
             <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">Los Bootcamps de Talent Tech ofrecen una experiencia de aprendizaje integral, asegurando que no solo domines habilidades técnicas, sino que también desarrolles la destreza profesional necesaria para destacar en el competitivo panorama tecnológico.</p>
             <div className="mt-10 self-center flex gap-2 w-full sm:w-auto flex-col sm:flex-row ">
-              <a
+              <Link
                 className="w-full sm:w-auto justify-center transition-transform inline-flex font-bold items-center outline-none  focus:outline-none bg-blue-500 hover:bg-opacity-80 text-lg py-3 rounded-full px-4 sm:px-6"
-                href=""
+                href="/Learn/Overview"
               >
                 Aprender
-              </a>
+              </Link>
               <a
                 className="w-full sm:w-auto justify-center transition-transform inline-flex font-bold items-center outline-none  focus:outline-none bg-gray-200 hover:bg-opacity-80 text-lg py-3 rounded-full px-4 sm:px-6"
                 href=""

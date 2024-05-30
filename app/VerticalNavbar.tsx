@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Dropdow from "../app/Components/Dropdown";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -87,24 +86,15 @@ export default function VerticalNavbar() {
                 </li>
                 <li className="pb-2 mb-3">
                   <Link
-                    href="/SOLIDPrinciples"
+                    href="/Learn/FrontEndReact"
                     className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      pathname === "/FrontEndReact" ? "bg-sky-200" : ""
+                      pathname === "/Learn/FrontEndReact" ? "bg-sky-200" : ""
                     }`}
                   >
                     <div>Frontend con React</div>
                   </Link>
                 </li>
-                <li className="pb-2 mb-3">
-                  <Link
-                    href="/FrontEndReact"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-e-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      pathname === "/FrontEndReact" ? "bg-sky-200" : ""
-                    }`}
-                  >
-                    <div>Estilización con frameWorks</div>
-                  </Link>
-                </li>
+              
               </ul>
             </nav>
           </aside>
