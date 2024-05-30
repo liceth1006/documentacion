@@ -5,7 +5,7 @@ import VerticalNavbar from "../../VerticalNavbar";
 import Link from "next/link";
 
 export default function Page() {
-  const hash = window.location.hash;
+ 
 
   return (
     <div className="">
@@ -471,9 +471,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#classes-objects"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Clases y Objetos
                   </Link>
@@ -481,9 +479,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#example-classes-objects"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Ejemplo de clases y objetos
                   </Link>
@@ -491,9 +487,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#encapsulation"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Encapsulamiento
                   </Link>
@@ -501,9 +495,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#example-encapsulation"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Ejemplo de encapsulamiento
                   </Link>
@@ -511,9 +503,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#inheritance"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Herencia
                   </Link>
@@ -521,9 +511,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#example-inheritance"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Ejemplo de Herencia
                   </Link>
@@ -531,9 +519,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#polymorphism"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Polimorfismo
                   </Link>
@@ -541,9 +527,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#example-polymorphism"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Ejemplo de Polimorfismo
                   </Link>
@@ -551,9 +535,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Abstraction"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Abstracción
                   </Link>
@@ -561,9 +543,7 @@ console.log(firulais.obtenerInformacion()); // Output: Nombre: Firulais, Tipo: p
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#example-Abstraction"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Ejemplo de Abstracción
                   </Link>

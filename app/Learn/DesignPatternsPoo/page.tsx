@@ -5,7 +5,7 @@ import VerticalNavbar from "../../VerticalNavbar";
 import Link from "next/link";
 
 export default function Page() {
-  const hash = window.location.hash;
+  
 
   return (
     <div className="">
@@ -215,9 +215,9 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
+                     
+                  
                   >
                    ¿Qué es un Patrón de Diseño?
                   </Link>
@@ -225,9 +225,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Creational"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                    Patrones Creacionales
                   </Link>
@@ -235,9 +233,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Structural"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                    Patrones Estructurales
                   </Link>
@@ -245,9 +241,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Behavioral"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Patrones de Comportamiento
                   </Link>

@@ -5,7 +5,7 @@ import VerticalNavbar from "../../VerticalNavbar";
 import Link from "next/link";
 
 export default function Page() {
-  const hash = window.location.hash;
+ 
 
   return (
     <div className="">
@@ -174,9 +174,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Introduction"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#Introduction" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Introducción
                   </Link>
@@ -184,9 +182,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#StructuredProgramming"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#StructuredProgramming" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     De programación estructurada a POO
                   </Link>
@@ -194,9 +190,7 @@ export default function Page() {
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Poo"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Poo" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     ¿Qué es la Programación Orientada a Objetos (POO)?
                   </Link>

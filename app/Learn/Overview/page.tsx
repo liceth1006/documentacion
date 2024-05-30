@@ -5,7 +5,7 @@ import VerticalNavbar from "../../VerticalNavbar";
 import Link from "next/link";
 
 export default function Page() {
-const hash = window.location.hash;
+
 
   return (
     <div className="">
@@ -156,9 +156,7 @@ const hash = window.location.hash;
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Introduction"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#Introduction" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   >
                     Introducción
                   </Link>
@@ -166,9 +164,7 @@ const hash = window.location.hash;
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Objective"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight link ${
-                      hash === "#Objective" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   
                   >
                     Objetivo
@@ -177,9 +173,7 @@ const hash = window.location.hash;
                 <li className="text-sm  rounded-s-xl bg-highlight dark:bg-highlight-dark">
                   <Link
                     href="#Topics"
-                    className={`p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight ${
-                      hash === "#Topics" ? "bg-sky-200" : ""
-                    }`}
+                    className="p-2 pe-2 w-full rounded-none lg:rounded-s-2xl text-start hover:bg-gray-200 dark:hover:bg-gray-80 relative flex items-center justify-between ps-5  bg-highlight "
                   
                   >
                     Temas
